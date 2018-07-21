@@ -14,7 +14,7 @@ def index():
 
     return render_template("index.htm", test=test)
 
-@main.route('/')
+@main.route('/projects')
 def projects():
 
 	test = {
@@ -22,3 +22,12 @@ def projects():
 	"world": "World"
 	}
 	return render_template("projects.htm",test2=test)
+
+@main.route('/contactus')
+def contactus():
+
+	test = {
+	"hello": "Hello",
+	"world": "World"
+	}
+	return render_template("contactus.htm",test3=test)
